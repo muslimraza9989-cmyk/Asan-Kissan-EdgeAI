@@ -47,3 +47,37 @@ If you find this work useful in your research, please cite our pre-print:
   journal={arXiv preprint},
   year={2026}
 }
+Author
+Muhammad Muslim Raza
+
+Department of Computer Science, COMSATS University Islamabad, Vehari Campus
+
+Email: sp23-bcs-084@cuivehari.edu.pk
+
+ORCID: 0009-0001-4570-1500
+
+
+---
+
+### Step 5: Terminal / Git Bash Se Push Karna
+
+Apne main project folder ke andar Git Bash ya VS Code terminal open karein aur yeh commands sequence mein run karein:
+
+```bash
+# 1. Git initialize karein
+git init
+
+# 2. Files stage karein
+git add .
+
+# 3. Pehla commit banayein
+git commit -m "feat: initial commit with hybrid architecture, INT8 model, and Flutter mobile scout"
+
+# 4. Branch ko main set karein
+git branch -M main
+
+# 5. Remote GitHub URL link karein (apna repo link paste karein)
+git remote add origin https://github.com/<YOUR_GITHUB_USERNAME>/Asan-Kissan-EdgeAI.git
+
+# 6. GitHub par upload karein
+git push -u origin main
