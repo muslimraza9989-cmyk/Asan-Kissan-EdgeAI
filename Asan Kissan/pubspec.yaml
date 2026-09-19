@@ -1,0 +1,40 @@
+name: asan_kissan
+description: "Production-ready offline Flutter mobile application for Corn Leaf Disease and Co-infection detection using ONNX Runtime with Grad-CAM explainability and Voice Assistance."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State Management
+  provider: ^6.1.2
+
+  # Utilities & Image Handling
+  image: ^4.2.0
+  image_picker: ^1.1.2
+  
+  # Machine Learning / ONNX Runtime (Mobile Native)
+  onnxruntime: ^1.4.1
+
+  # Voice Readout / Text-to-Speech
+  flutter_tts: ^4.2.0
+  
+  # UI & Design
+  google_fonts: ^6.2.1
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/labels.txt
+    - assets/corn_model_with_cam_int8.onnx
