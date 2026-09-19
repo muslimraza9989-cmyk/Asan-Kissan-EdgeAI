@@ -1,58 +1,27 @@
-# Flutter / Dart
+# Flutter & Dart
 .dart_tool/
-.packages
-.pub-cache/
-.pub/
-build/
 .flutter-plugins
 .flutter-plugins-dependencies
-.dart_tool/
+.packages
+build/
+*.apk
+*.aab
 
-# Android
-**/android/.gradle/
-**/android/local.properties
-**/android/gradle/wrapper/gradle-wrapper.jar
-**/android/captures/
-**/android/.idea/
-**/android/app/debug/
-**/android/app/profile/
-**/android/app/release/
-
-# iOS / macOS
-**/ios/Pods/
-**/ios/.symlinks/
-**/ios/Flutter/ephemeral/
-**/ios/Flutter/Generated.xcconfig
-**/ios/Flutter/flutter_export_environment.sh
-**/macos/Pods/
-**/macos/Flutter/ephemeral/
-
-# IDEs and editors
-.idea/
-*.iml
-.vscode/
-
-# OS files
-.DS_Store
-Thumbs.db
-
-# Environment and secrets
-.env
-.env.*
-!.env.example
-
-# Python / ML tooling
+# Python & ML
 __pycache__/
 *.py[cod]
-.venv/
+*$py.class
+*.ipynb_checkpoints
 venv/
 env/
-.pytest_cache/
-.mypy_cache/
+.env
 
-# Model and dataset artifacts
-*.onnx.tmp
-*.tflite.tmp
-*.h5.tmp
-*.pt.tmp
-*.pth.tmp
+# Large dataset caches (keep datasets off git)
+data/
+dataset/
+*.zip
+*.tar.gz
+
+# OS specific
+.DS_Store
+Thumbs.db
